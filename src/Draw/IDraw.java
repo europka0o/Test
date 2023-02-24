@@ -19,9 +19,10 @@ public abstract class IDraw extends JComponent
 
     /// Костыль, но по другому никак
     @Override
-    public void paintComponent(Graphics iG)
+    public final void paintComponent(Graphics iG)
     {
-        Draw(iG);
+        if (_visible)
+            Draw(iG);
     }
 
     /// Метод самой отрисовки, вообще в будущем его нужно будет сделать protected,
