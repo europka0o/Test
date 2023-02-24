@@ -15,37 +15,32 @@ public class BWindow extends JFrame
     /// Задать высоту окна
     public void SetHeigh(int iH)
     {
-        _heigh = iH;
-        super.setSize(_heigh, _width);
+        int w = super.getWidth();
+        super.setSize(iH, w);
     }
 
     /// Задать ширину окна
     public void SetWidth(int iW)
     {
-        _width = iW;
-        super.setSize(_heigh, _width);
+        int h = super.getHeight();
+        super.setSize(h, iW);
     }
 
     /// Задать высоту и ширину окна
     public void SetSize(int iH, int iW)
     {
-        _heigh = iH;
-        _width = iW;
-        super.setSize(_heigh, _width);
+        super.setSize(iH, iW);
     }
 
     /// Получить высоту окна
     public int GetHeight()
     {
-        return _heigh;
+        return super.getHeight();
     }
 
     /// Получить ширину окна
     public int GetWidth()
     {
-        return _width;
+        return super.getHeight();
     }
-
-    private int _heigh;  /// Высота окна
-    private int _width;  /// Ширина окна
 }
