@@ -1,5 +1,6 @@
 package Platform;
 
+/// Класс для хранения координат в 2д пространстве, предполагается использовать либо с int, либо с double
 public class Position<Type>
 {
     /// Конструктор по умолчанию
@@ -59,7 +60,19 @@ public class Position<Type>
         _y = iY;
     }
 
-    private Type _x;
-    private Type _y;
+    /// Преобразовать в int
+    public Position<Integer> ToInteger()
+    {
+        return new Position<Integer>((Integer)_x, (Integer)_y);
+    }
+
+    /// Преобразовать в double
+    public Position<Double> ToDouble()
+    {
+        return new Position<Double>((Double)_x, (Double)_y);
+    }
+
+    private Type _x;    /// Абсцисса
+    private Type _y;    /// Ордината
 }
 
