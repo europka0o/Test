@@ -13,7 +13,7 @@ public class BWindow extends JFrame
     }
 
     /// Задать высоту окна
-    public void SetHeigh(int iH)
+    public void SetHeight(int iH)
     {
         int w = super.getWidth();
         super.setSize(iH, w);
