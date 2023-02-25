@@ -5,6 +5,7 @@ import javax.swing.*;
 ///Базовая реализация окна, в которой и рисуется всё что есть в нашем приложении
 public class BWindow extends JFrame
 {
+    /// Констурктор по умолчанию
     public BWindow()
     {
         super();
