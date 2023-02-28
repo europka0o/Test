@@ -5,6 +5,7 @@ import Platform.CallBack;
 import Platform.Position;
 
 /// Базовый класс для виджетов(элементов интерфейса, кнопок, текста, выпадающих списков и т.д.)
+/// Класс является абстрактным и не может быть создан
 public abstract class IWidget extends IDraw
 {
     public IWidget()
