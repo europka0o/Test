@@ -13,5 +13,7 @@ public class Main
         var text = new StaticText("Hello World!");
         text.GetPosition().SetXY(10, 20);
         comp.add(text);
+
+        //checking
     }
 }
